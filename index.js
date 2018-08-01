@@ -111,8 +111,8 @@ window.requestAnimationFrame(moveRock)
  */
  function endGame() {
  	clearInterval(gameInterval);
- 	for(var i = 0; i< ROCKS.length; i++){
- 		ROCKS.splice(i, 1)
+ 	for each(var rock in ROCKS){
+ 	  rock.remove();
  	}
  	// ROCKS.splice(0, ROCKS.length);
  	//child = document.getElementsByClassName('rock')
