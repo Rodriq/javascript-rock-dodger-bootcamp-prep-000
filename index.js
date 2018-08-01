@@ -111,9 +111,9 @@ window.requestAnimationFrame(moveRock)
  */
  function endGame() {
  	clearInterval(gameInterval);
- 	forEach (rock in ROCKS){
- 	  rock.remove()
- 	}
+ 	forEach (function (){
+ 	  
+ 	})
  	// ROCKS.splice(0, ROCKS.length);
  	//child = document.getElementsByClassName('rock')
  	// DODGER.removeChild(child)
