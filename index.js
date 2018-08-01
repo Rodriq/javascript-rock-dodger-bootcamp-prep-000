@@ -133,9 +133,11 @@ window.requestAnimationFrame(moveRock)
    if(e.which == LEFT_ARROW){
      moveDodgerLeft();
      e.preventDefault();
+     e.stopPropagation();
    }else if(e.which == RIGHT_ARROW){
    	moveDodgerRight();
-   	     e.preventDefault();
+   	 e.preventDefault();
+   	e.stopPropagation();
    }
 }
 function moveDodgerLeft() {
