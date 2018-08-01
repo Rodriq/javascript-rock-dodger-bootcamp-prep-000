@@ -110,10 +110,10 @@ window.requestAnimationFrame(moveRock)
  * Finally, alert "YOU LOSE!" to the player.
  */
  function endGame() {
-   for each (var rr in ROCKS){
- 	  rr.remove()
+ 	clearInterval(gameInterval);
+ 	for each (var rock in ROCKS){
+ 	  rock.remove()
  	}
- 	clearInterval(gameInterval)
  	// ROCKS.splice(0, ROCKS.length);
  	//child = document.getElementsByClassName('rock')
  	// DODGER.removeChild(child)
